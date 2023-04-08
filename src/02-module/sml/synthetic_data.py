@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 # %%
-from collections import defaultdict
-from faker import Faker
-import pandas as pd
-import numpy as np
+import bisect
 import datetime
 import hashlib
-import random
 import math
 import os
-import bisect
-from typing import Optional, Union, Any, Dict, List, TypeVar, Tuple
+import random
+from collections import defaultdict
+from typing import Any, Dict, List, Optional, Tuple, TypeVar, Union
+
+import numpy as np
+import pandas as pd
+from faker import Faker
 
 # Seed for Reproducibility
 faker = Faker()
@@ -53,7 +54,7 @@ CATEGORY_PERC_PRICE = {
                        "Clothing":             (0.05, 10, 2000.01),
                        "Electronics":          (0.02, 100, 10000.01),
                        "Sports/Outdoors":      (0.015, 10, 100.01),
-                       "Holliday/Travel":      (0.014, 10, 100.01),              
+                       "Holiday/Travel":      (0.014, 10, 100.01),              
                        "Jewelery":             (0.001, 10, 100.01)
                        }
 
