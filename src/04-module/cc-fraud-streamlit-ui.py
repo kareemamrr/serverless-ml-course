@@ -1,22 +1,18 @@
 import datetime
-import joblib
-from math import radians
-from sml import cc_features
-
-import pandas as pd
-import numpy as np
-import plotly.express as px
-from matplotlib import pyplot
+# import folium
+# from streamlit_folium import st_folium
+import json
 import warnings
+from math import radians
 
 import hopsworks
-from sml import synthetic_data
-
+import joblib
+import numpy as np
+import pandas as pd
+import plotly.express as px
 import streamlit as st
-
-import folium
-from streamlit_folium import st_folium
-import json
+from matplotlib import pyplot
+from sml import cc_features, synthetic_data
 
 start_date = (datetime.datetime.now() - datetime.timedelta(hours=200)) 
 end_date = (datetime.datetime.now()) 
